@@ -55,7 +55,8 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps.conf:system/etc/gps.conf \
-    $(LOCAL_PATH)/configs/sirfgps.conf:system/etc/sirfgps.conf
+    $(LOCAL_PATH)/configs/sirfgps.conf:system/etc/sirfgps.conf \
+    $(LOCAL_PATH)/configs/apns-conf.xml:system/etc/apns-conf.xml
 
 # Packages
 PRODUCT_PACKAGES := \
