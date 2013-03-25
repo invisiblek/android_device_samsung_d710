@@ -48,6 +48,17 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vold.umsdirtyratio=20
 
+# Goo
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/goomanager.apk:system/app/goomanager.apk
+
+# Goo
+PRODUCT_PROPERTY_OVERRIDES += \
+     ro.goo.developerid=dastin1015 \
+     ro.goo.board=d710 \
+     ro.goo.rom=WILD-FOR-THE-NIGHT \
+     ro.goo.version=$(shell date +%Y%m%d%H%M%S)
+
 # Net
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/ip-up:system/etc/ppp/ip-up \
