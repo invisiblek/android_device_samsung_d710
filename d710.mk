@@ -52,13 +52,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilt/goomanager.apk:system/app/goomanager.apk
 
-# Goo
-PRODUCT_PROPERTY_OVERRIDES += \
-     ro.goo.developerid=dastin1015 \
-     ro.goo.board=d710 \
-     ro.goo.rom=WILD-FOR-THE-NIGHT \
-     ro.goo.version=$(shell date +%Y%m%d%H%M%S)
-
 # Net
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/ip-up:system/etc/ppp/ip-up \
@@ -131,7 +124,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     mobiledata.interfaces=ppp0,wlan0,uwbr0 \
     ro.telephony.ril_class=SamsungCDMAv6RIL \
     ro.ril.samsung_cdma=true \
-    ro.carrier=Sprint
+    ro.carrier=Sprint \
+    ro.goo.version=$(shell date +%Y%m%d%H%M%S)
 
 # enable Google-specific location features,
 # like NetworkLocationProvider and LocationCollector
