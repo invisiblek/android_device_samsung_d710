@@ -124,8 +124,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     mobiledata.interfaces=ppp0,wlan0,uwbr0 \
     ro.telephony.ril_class=SamsungCDMAv6RIL \
     ro.ril.samsung_cdma=true \
-    ro.carrier=Sprint \
-    ro.goo.version=$(shell date +%Y%m%d%H%M%S)
+    ro.carrier=Sprint
 
 # enable Google-specific location features,
 # like NetworkLocationProvider and LocationCollector
