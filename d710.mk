@@ -48,10 +48,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vold.umsdirtyratio=20
 
-# Goo
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/goomanager.apk:system/app/goomanager.apk
-
 # Net
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/ip-up:system/etc/ppp/ip-up \
@@ -66,7 +62,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES := \
     GalaxyS2Settings \
     CellBroadcastReceiver
-
 
 # WIMAX
 PRODUCT_PACKAGES += \
