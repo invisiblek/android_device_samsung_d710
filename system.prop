@@ -7,7 +7,3 @@ rild.libargs=-d /dev/ttyS0
 ro.sf.lcd_density=240
 
 qemu.hw.mainkeys=1
-
-# goo.im support
-ro.goo.developerid=dastin1015
-ro.goo.rom=WILD-FOR-THE-NIGHT
